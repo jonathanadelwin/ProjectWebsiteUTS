@@ -1,0 +1,878 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header{
+    overflow: hidden;
+    height: 100vh;
+}
+
+.videoBG{
+    position:absolute;
+    width: 100%;
+    min-height: 100%;
+    max-width: 100%;
+    justify-content: center;
+    display: flex;
+    z-index: -1;
+    bottom: 0;
+    right: 0;
+}
+
+.navigation{
+    background: rgba(97, 0, 0, 0.7);
+    height: 60px;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    max-width: 100%;
+}
+
+.logo{
+    margin: 0 50px 0 0;
+    height: 60px;
+    float: left;
+    color: white;
+    font-size: 35px;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.menu{
+    float: left;
+    list-style: none;
+    margin-left: 500px;
+    text-align: center;
+    position: relative;
+    padding-top: 2px ;
+    padding-bottom: 5px;
+    margin-top: 50px;
+    display: flex;
+    z-index: 1;
+    justify-content: center;
+}
+
+.menu li{
+    display: inline;
+    margin: 10px;
+    margin-top: -30px;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: seashell;
+    padding: 5px 10px;
+    margin-top: 10px;
+}
+
+.menu li.active a{
+    color: skyblue;
+}
+
+.menu li a:hover{
+    color: skyblue;
+}
+
+.menu .boxMenu li a{
+    background: rosybrown;
+    border-radius: 1px;
+    margin-top: -34px;
+    padding: 10px;
+    padding-right: 10px;
+    justify-content: center;
+    display: flex;
+    z-index: 1;
+    min-width: 100%;
+}
+
+.menu .boxMenu{
+    margin-top: -30px;
+}
+
+.menu .boxMenu li a:hover{
+    background: bisque;
+}
+
+.banner{
+    position: relative;
+    top: 270px;
+    text-align: center;
+    left: 65px;
+}
+
+.banner h2{
+    color: white;
+    font-size: 80px;
+    margin: 20px;
+}
+
+.banner h2 span{
+    color: rgb(241, 106, 106);
+}
+
+.banner p{
+    color: white;
+    font-size: 20px;
+    margin: 0;
+    font-weight: bold;
+}
+
+.banner .button{
+    margin-top: 100px;
+    background-color: rgb(240, 89, 89);
+    border: 0;
+    font-size: 20px;
+    text-transform: uppercase;
+    border: 3px solid;
+    padding: 20px;
+    color: white;
+    border-radius: 20px;
+    opacity: 0.4;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.banner .button:hover{
+    opacity: 2;
+}
+
+.banner a{
+    text-decoration: none;
+    color: white;
+}
+
+.Choose{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.Choose h2{
+    font-size: 30px;
+    margin-left: 100px;
+}
+
+.Choose h2 span{
+    color: rgb(240, 89, 89);
+    font-size: 30px;
+}
+
+.Choose img{
+    width: 100px; height: 80px;
+    margin-left: 100px;
+}
+
+.Choose p{
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 100px;
+    color: grey;
+}
+
+.atur{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-left: 100px;
+}
+
+.kiri{
+    float:right;
+    display: block;
+    width: 500px;
+    margin-left: 50px;
+}
+
+.kanan{
+    float: left;
+    display: block;
+    width:500px;
+}
+
+.button-kiri-atas{
+    border-style: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: rgb(95, 194, 233);
+    margin-left: 105px;
+    font-weight: bold;
+}
+
+.button-kiri-tengah{
+    border-style: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 105px;
+    color: rgb(95, 194, 233);
+}
+
+.button-kiri-bawah{
+    border-style: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 105px;
+    color: rgb(95, 194, 233);
+}
+
+.button-kanan-atas{
+    border-style: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 105px;
+    color: rgb(95, 194, 233);
+}
+
+.button-kanan-tengah{
+    border-style: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 105px;
+    color: rgb(95, 194, 233);
+}
+
+.button-kanan-bawah{
+    border-style: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 105px;
+    text-decoration: none;
+}
+
+.kanan a{
+    text-decoration: none;
+    color: rgb(95, 194, 233);
+    background: transparent;
+}
+
+.kiri a{
+    text-decoration: none;
+    color: rgb(95, 194, 233);
+    background: transparent;
+}
+
+.kiri img{
+    float:left;
+    width: 100px;
+    height: 100px;
+
+}
+
+.kanan img{
+    float: left;
+    width: 100px;
+    height: 100px;
+}
+
+.kiri .kiri-atas{
+    margin-top: 20px;
+}
+
+.kiri .kiri-tengah{
+    margin-top: 80px;
+}
+
+.kiri .kiri-bawah{
+    margin-top: 80px;
+}
+
+.kanan .kanan-atas{
+    margin-top: 20px;
+}
+
+.kanan .kanan-tengah{
+    margin-top: 80px;
+}
+
+.kanan .kanan-bawah{
+    margin-top: 80px;
+}
+
+.kiri h2{
+    margin-left: 110px;
+}
+
+.kanan h2{
+    margin-left: 110px;
+}
+
+.kiri p{
+    margin-left: 110px;
+}
+
+.kanan p{
+    margin-left: 110px;
+}
+
+.pictureBG{
+    width: 100%;
+    height: 350px;
+    position:relative;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.banner2{
+    position: relative;
+    margin-top: -200px;
+    text-align: center;
+    top: -120px;
+}
+
+.banner2 h2{
+    color: white;
+    font-size: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 70px;
+}
+
+.banner2 h2 span{
+    color:rgb(219, 130, 130);
+}
+
+.banner2 p{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.banner2 .button2{
+    display: inline-block;
+    margin-top: 10px;
+    background-color: rgb(240, 89, 89);
+    border: 0;
+    font-size: 20px;
+    text-transform: uppercase;
+    border: 3px solid;
+    padding: 20px;
+    color: white;
+    border-radius: 20px;
+    opacity: 0.4;
+    transition: 0.3s;
+    margin-left: 80px;
+    cursor: pointer;
+}
+
+.banner2 .button2:hover{
+    opacity: 2;
+}
+
+.banner2 a{
+    text-decoration: none;
+    color: white;
+}
+
+.weapon{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 60px;
+}
+
+.weapon h2{
+    font-size: 30px;
+    margin-left: 100px;
+}
+
+.weapon h2 span{
+    color: rgb(240, 89, 89);
+    font-size: 30px;
+}
+
+.weapon img{
+    width: 100px; height: 80px;
+    margin-left: 100px;
+}
+
+.weapon p{
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 100px;
+    color: grey;
+}
+
+.atur2{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    max-width: 100%;
+    width: 100%;
+}
+
+
+.biodata p{
+    text-align: center;
+}
+
+.kiri2{
+    float: left;
+    display: block;
+    width: 300px;
+    margin-right: 100px;
+    margin-left: 200px;
+}
+
+.kiri2 img{
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+
+.biodata img{
+    margin-left: -100px;
+    width: 100px;
+    height: 120px;
+}
+
+.biodata{
+    margin-bottom: 50px;
+}
+
+.kiri2 a{
+    text-align: center;
+    text-decoration: none;
+    margin-top: 20px;
+    color: black;
+    border-radius: 2px;
+}
+
+.kiri-tengah2{
+    margin-top: 100px;
+}
+
+.kiri-bawah2{
+    margin-top: 100px;
+}
+
+.kiri-list{
+    margin-top: 50px;
+}
+
+.button-atas2{
+    display: inline-block;
+    margin-top: 10px;
+    background: white;
+    font-size: 20px;
+    border: transparent;
+    padding: 20px;
+    color: white;
+    border-radius: 20px;
+    justify-content: center;
+}
+
+.button-tengah2{
+    display: inline-block;
+    margin-top: 10px;
+    background: white;
+    font-size: 20px;
+    border: transparent;
+    padding: 20px;
+    color: white;
+    border-radius: 20px;
+    justify-content: center;
+}
+
+.button-bawah2{
+    display: inline-block;
+    margin-top: 10px;
+    background: white;
+    font-size: 20px;
+    border: transparent;
+    padding: 20px;
+    color: white;
+    border-radius: 20px;
+    justify-content: center;
+}
+
+.button-list{
+    display: inline-block;
+    margin-top: 10px;
+    background-color: rgb(240, 89, 89);
+    font-size: 20px;
+    text-transform: uppercase;
+    border: 3px solid;
+    padding: 20px 60px 20px 60px;
+    color: white;
+    border-radius: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.button-list a{
+    color: white;
+}
+
+.border-atas2{
+    border-radius: 20px ;
+    color: brown;
+}
+
+.kanan2{
+    float: left;
+    width: 600px;
+    margin-top: 100px;
+}
+
+.kanan2 img{
+    width: 600px ;
+    height: 250px;
+}
+
+.kanan2 h5{
+    font-weight: lighter;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.button-kanan2{
+    display: inline-block;
+    margin-top: 10px;
+    background-color: rgb(240, 89, 89);
+    font-size: 20px;
+    text-transform: uppercase;
+    border: 3px solid;
+    padding: 20px 60px 20px 60px;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.button-kanan2 a{
+    text-decoration: none;
+    color:white;
+}
+
+.pictureBG2{
+    width: 100%;
+    height: 900px;
+    position:relative;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 0.2;
+}
+
+.schedule{
+    position: relative;
+    margin-top: -200px;
+    text-align: center;
+    top: -700px;
+}
+
+.schedule h2{
+    color: rgb(0, 109, 252);
+    font-size: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 70px;
+}
+
+.schedule h2 span{
+    color:rgb(219, 130, 130);
+}
+
+.schedule p{
+    color: rgb(10, 10, 10);
+    margin-left: 100px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.schedule img{
+    width: 100px; height: 80px;
+    margin-left: 60px;
+    background:transparent;
+}
+
+.schedule h3{
+    margin-left: 60px;
+}
+
+.pilih-hari a{
+    display: inline;
+    padding: 40px;
+    margin-left: 60px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.pilih-hari .senin{
+    color: cadetblue;
+}
+
+.pilih-hari a:hover{
+    color: cadetblue;
+}
+
+th, td {
+    border: 2px solid white;
+    padding: 30px;
+    font-weight: bold;
+}
+
+table{
+    margin-left: 560px;
+}
+
+.menu-table{
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    min-width: 100%;
+    margin-top: 30px;
+    margin-left: -460px;
+    table-layout: fixed;
+    min-height: 100%;
+}
+
+.actor{
+    position: relative;
+    margin-top: -200px;
+    text-align: center;
+    top: -400px;
+}
+
+.actor h2{
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 70px;
+}
+
+.actor h2 span{
+    color:rgb(219, 130, 130);
+}
+
+.actor p{
+    color: rgb(10, 10, 10);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 80px;
+}
+
+.actor img{
+    width: 100px; height: 80px;
+    margin-left: 60px;
+    background:transparent;
+}
+
+.multi-kolom{
+    margin-left: 150px;
+    margin-top: -420px;
+    justify-content: center;
+    display: flex;
+    z-index: 1;
+    margin-bottom: 20px;
+}
+
+.kolom1{
+    float: left;
+    width: 300px;
+}
+
+.kolom2{
+    float: left;
+    width: 300px;
+    margin-left: 20px;
+}
+
+.kolom3{
+    float: left;
+    width: 300px;
+    margin-left: 20px;
+}
+
+.kolom1-img img{
+    width: 200px;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+.kolom2-img img{
+    width: 200px;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+.kolom3-img img{
+    width: 200px;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+.multi-kolom span{
+    color: coral;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.multi-kolom h2,p{
+    margin-left: 0px;
+}
+
+.logo1 img{
+    float: left;
+    width: 40px;
+    height: 30px;
+}
+
+.logo1 img:hover{
+    width: 42px;
+    height: 32px;
+}
+
+.logo2 img{
+    float: left;
+    width: 40px;
+    height: 30px;
+}
+
+.logo2 img:hover{
+    width: 42px;
+    height: 32px;
+}
+
+.logo3 img{
+    float: left;
+    width: 40px;
+    height: 30px;
+}
+
+.logo3 img:hover{
+    width: 42px;
+    height: 32px;
+}
+
+.border1{
+    padding: 20px;
+    border: 2px solid wheat;
+    border-radius: 20px;
+    margin-right: 20px;
+}
+
+.border2{
+    padding: 20px;
+    border: 2px solid wheat;
+    border-radius: 20px;
+    
+}
+
+.border3{
+    padding: 20px;
+    border: 2px solid wheat;
+    border-radius: 20px;
+    margin-left: 20px;
+}
+
+.map-form{
+    justify-content: center;
+    display: flex;
+    z-index: -1;
+    width: 100%;
+    min-width: 100%;
+}
+
+.kirimaps{
+    width: 100%;
+}
+
+.kirimaps iframe{
+    width: 100%;
+    min-width: 100%;
+    height: 700px;
+}
+
+.kananform{
+    float: left;
+    width: 100%;
+}
+
+.bgform img{
+    float: left;
+    width: 100%;
+    height: 705px;
+    position: relative;
+    min-width: 100%;
+    z-index: -1;
+}
+
+form{
+    position: absolute;
+    margin: auto;
+    justify-content: center;
+    z-index: 1;
+    margin-top: 50px;
+    padding: 0 50px 50px 50px;
+    margin-left: 220px;
+    background-color: rgb(245, 137, 137);
+    border: 2px solid white;
+    border-radius: 20px;
+}
+
+.inputName-Email{
+    display: inline-block;
+}
+
+.yourName{
+    margin-top: 80px;
+    padding: 20px;
+    margin-right: 20px;
+}
+
+.yourEmail{
+    padding: 20px;
+}
+
+.Subject{
+    margin-top: 20px;
+    padding: 20px;
+    width: 405px
+}
+
+.Messages{
+    margin-top: 20px;
+    padding: 20px;
+    width: 405px;
+    padding-bottom: 200px;
+    text-align: left
+}
+
+.button-form a{
+    text-decoration: none;
+    color: white;
+}
+
+.button-form{
+    border-radius: 20px;
+    border: transparent;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: tomato;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+footer{
+    text-align: center;
+    padding: 5px;
+    background-color: rgb(204, 200, 200);
+    margin-top: -5px;
+}
+
+footer a{
+    text-decoration: none;
+    color: violet;
+}
+
+.biodata{
+    font-size: 20px;
+    text-align: center;
+    margin-left: 100px;
+}
